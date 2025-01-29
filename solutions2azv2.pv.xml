@@ -95,11 +95,11 @@
       <field name="ParameterOut" custom="" parameter="RemotePartyIDCallingPartyHostPart">$GWHostPort</field>
     </device>
     <sms>
-      <variable name="MESSAGING_AUTH_USER">
+      <variable name="MESSAGING_ACCESS_KEY">
         <title>ApiKey</title>
         <option name="ApiKey" required="true" maxlength="200" type="textbox"></option>
       </variable>
-      <variable name="MESSAGING_AUTH_PASSWORD">
+      <variable name="MESSAGING_SECRET_KEY">
         <title>SecretKey</title>
         <option name="SecretKey" secure="true" required="true" maxlength="200" type="password"></option>
       </variable>
