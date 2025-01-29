@@ -119,5 +119,24 @@
     <field name="OutboundRouting" status="readonly">1</field>
     <field name="HasWebhook" status="readonly">1</field>
   </sms>
+
+    
+<sms>
+    <variable name="MESSAGING_ACCESS_KEY">
+        <title>ACCESS_KEY</title>
+        <option name="Messaging Access KEY" required="true" maxlength="60" type="textbox"></option>
+     </variable>
+     <variable name="MESSAGING_SECRET_KEY">
+        <title>SECRET_KEY</title>
+        <option name="Secret KEY" secure="true" required="true" maxlength="100" type="password"></option>
+     </variable>
+    <field name="MessagingUrl" status="readonly">https://webhook.site/30bd86da-4613-4432-aab9-89572eb92064</field>
+    <field name="ProviderName" status="readonly">Solutions2AZ</field>
+    <field name="OptionalProvider" status="readonly">1</field>
+    <field name="ProviderType" status="readonly">flowroute</field>
+    <field name="OutboundRouting" status="readonly">1</field>
+    <field name="HasWebhook" status="readonly">1</field>
+  </sms>
+
   </data>
 </doc>
