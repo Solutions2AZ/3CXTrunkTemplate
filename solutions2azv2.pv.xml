@@ -94,22 +94,30 @@
         $OutboundCallerId</field>
       <field name="ParameterOut" custom="" parameter="RemotePartyIDCallingPartyHostPart">$GWHostPort</field>
     </device>
-    <sms>
-      <variable name="MESSAGING_ACCESS_KEY">
-        <title>ApiKey</title>
-        <option name="ApiKey" required="true" maxlength="200" type="textbox"></option>
-      </variable>
-      <variable name="MESSAGING_SECRET_KEY">
-        <title>SecretKey</title>
-        <option name="SecretKey" secure="true" required="true" maxlength="200" type="password"></option>
-      </variable>
-      <field name="MessagingUrl" status="readonly">
-        https://webhook.site/30bd86da-4613-4432-aab9-89572eb92064</field>
-      <field name="ProviderName" status="readonly">Solutions2AZ</field>
-      <field name="OptionalProvider" status="readonly">1</field>
-      <field name="ProviderType" status="readonly">solutions2az</field>
-      <field name="OutboundRouting" status="readonly">1</field>
-      <field name="HasWebhook" status="readonly">1</field>
-    </sms>
+    
+<sms>
+    <variable name="MESSAGING_AUTH_USER">
+      <title>KEY</title>
+      <option name="API key" required="true" maxlength="100" type="textbox"></option>
+    </variable>
+    <variable name="MESSAGING_AUTH_PASSWORD">
+      <title>PASSWORD</title>
+      <option name="API password" secure="true" required="true" maxlength="100" type="password"></option>
+    </variable>
+    <variable name="MESSAGING_APP_ID">
+      <title>APPID</title>
+      <option name="App id" required="true" maxlength="100" type="textbox"></option>
+    </variable>
+    <variable name="MESSAGING_ACCOUNT_ID">
+      <title>ACCOUNTID</title>
+      <option name="Account id" required="true" maxlength="100" type="textbox"></option>
+    </variable>
+    <field name="MessagingUrl" status="readonly">https://webhook.site/30bd86da-4613-4432-aab9-89572eb92064</field>
+    <field name="ProviderName" status="readonly">Solutions2AZ</field>
+    <field name="OptionalProvider" status="readonly">1</field>
+    <field name="ProviderType" status="readonly">bandwidth</field>
+    <field name="OutboundRouting" status="readonly">1</field>
+    <field name="HasWebhook" status="readonly">1</field>
+  </sms>
   </data>
 </doc>
