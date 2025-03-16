@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+<header>
+    <type>messaging-template</type>
+    <version>150000</version>
+    <time>2025-03-15 15:00:00</time>
+    <name>Solutions2AZ WhatsApp as SMS</name>
+    <url>https://www.solutions2az.net/</url>
+    <image>whatsapp.png</image>
+    <description>Worldwide</description>
+	  <tags>e164</tags>
+    <templatetype>preferred</templatetype>
+</header>
+<data>
+   <sms>
+		<variable name="MESSAGING_API_KEY">
+			<title>APIKEY</title>
+			<option name="Messaging API key" required="true" maxlength="200" type="textbox"></option>
+		</variable>
+		<variable name="PROVIDER_URL">
+			<title>PROVIDER_URL_KEY</title>
+			<option name="Provider URL" required="true" type="textbox">https://webhook.site/30bd86da-4613-4432-aab9-89572eb92064</option>
+		</variable>
+		<field name="ProviderName" status="readonly">Solutions2AZ</field>
+		<field name="OptionalProvider" status="readonly">1</field>
+		<field name="ProviderType" status="readonly">generic</field>
+		<field name="OutboundRouting" status="readonly">1</field>
+		<field name="HasWebhook" status="readonly">1</field>
+	</sms>
+</data>
+</doc>
